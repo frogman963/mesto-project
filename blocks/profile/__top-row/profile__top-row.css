@@ -1,0 +1,11 @@
+.profile__top-row {
+  display: flex;
+  align-items: baseline;
+  gap: 25px;
+}
+@media screen and (max-width: 320px) {
+  .profile__top-row {
+    gap: 10px;
+    padding-left: 31p;
+  }
+}

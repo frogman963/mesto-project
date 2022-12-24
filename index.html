@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Проект место</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/header_logo.svg" alt="логотип" />
+    </header>
+    <main class="content">
+      <section class="profile">
+        <div class="profile__info">
+          <img class="profile__avatar" src="./images/avatar.jpg" />
+          <div class="profile__name-discription">
+            <div class="profile__top-row">
+              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <button class="profile__edit-button" type="button"></button>
+            </div>
+            <p class="profile__discription">Исследователь океана</p>
+          </div>
+        </div>
+        <button class="profile__add-button" type="button"></button>
+      </section>
+      <section class="elements">
+<figure class="element">
+    <img class="element__picture" src="./images/karachaevsk.png" alt="">
+    <div class="element__text-like"><figcaption class="element__text">Карачаевск</figcaption>
+<button class="element__like" ></button></div>
+</figure>
+<figure class="element">
+    <img class="element__picture" src="./images/elbrus.png" alt="">
+    <div class="element__text-like"><figcaption class="element__text">Гора Эльбрус</figcaption>
+<button class="element__like"></button></div>
+</figure>
+<figure class="element">
+    <img class="element__picture" src="./images/dombai.png" alt="">
+    <div class="element__text-like"><figcaption class="element__text">Домбай</figcaption>
+<button class="element__like"></button></div>
+</figure>
+<figure class="element">
+    <img class="element__picture" src="./images/elbrus.png" alt="">
+    <div class="element__text-like"><figcaption class="element__text">Гора Эльбрус</figcaption>
+<button class="element__like"></button></div>
+</figure>
+<figure class="element">
+    <img class="element__picture" src="./images/elbrus.png" alt="">
+    <div class="element__text-like"> <figcaption class="element__text">Гора Эльбрус</figcaption>
+<button class="element__like"></button></div>
+</figure>
+<figure class="element">
+    <img class="element__picture" src="./images/karachaevsk.png" alt="">
+   <div class="element__text-like"><figcaption class="element__text">Карачаевск </button></figcaption>
+<button class="element__like"></div> 
+</figure>
+      </section>
+      <footer class="footer">
+        <p class="footer__text">© 2020 Mesto Russia</p>
+      </footer>
+      <div class="popup">
+        <div class="popup__container">
+            <h2 class="popup__text">Редактировать профиль</h2>
+            <form class="form">
+              <fieldset class="form__input-container">
+             <!--    <label for="first-name">Имя</label> --> <!-- если лейблы необходимы , тогда добавлю -->
+                <input type="text" class="form__item"  placeholder="Жак-Ив Кусто">
+                <!-- <labe for="hobby">О себе</labe> -->
+                <input type="text" class="form__item" placeholder="Исследователь океана">
+              </fieldset>
+<button type="submit" class="form__button-safe">Сохранить</button>
+            </form>
+            <button type="button" class="form__button-close"></button>
+        </div>
+
+      </div>
+    </main>
+  </body>
+</html>

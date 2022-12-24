@@ -1,0 +1,8 @@
+.element__text-like {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 246px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
