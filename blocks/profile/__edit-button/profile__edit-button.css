@@ -1,8 +1,11 @@
 .profile__edit-button {
+  margin: 0;
+  padding: 0;
+  border: none;
   border: 1px solid #ffffff;
   width: 24px;
   height: 24px;
-  background: black url(../../../images/pen.png);
+  background: black url(../../../images/pen.svg);
   background-position: center;
   background-repeat: no-repeat;
   padding: 0;
@@ -12,12 +15,10 @@
   cursor: pointer;
   opacity: 0.6;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1279px) {
   .profile__edit-button {
     width: 18px;
     height: 18px;
-    background: black url(../../../images/pen2.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: 7.5px 7.5px;
   }
 }

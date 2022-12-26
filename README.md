@@ -1,12 +1,18 @@
 # Проект: Место
 
 ### Обзор
+Учебный проект mesto для Яндекс практикум
 
-### Использовал 
+### Использовал в работе над проектом
 * HTML
 * CSS
 * FLEX-BOX
 * GRID
+
+
+**Github**
+* [Ссылка на Github](https://github.com/frogman963/mesto-project)
+
 
 **Figma**
 

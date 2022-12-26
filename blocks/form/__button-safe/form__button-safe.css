@@ -1,6 +1,9 @@
 .form__button-safe {
+  margin: 0;
+  padding: 0;
+  border: 0;
   width: 358px;
-  height: 50px;
+  min-height: 50px;
   background: #000000;
   border-radius: 2px;
   color: #ffffff;
@@ -10,17 +13,16 @@
   line-height: 22px;
   text-align: center;
   margin-top: 45px;
+  
 }
 .form__button-safe:hover {
-  background: #000000;
   opacity: 0.8;
-  border-radius: 2px;
   cursor: pointer;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1279px) {
   .form__button-safe {
     width: 238px;
-    height: 46px;
+    min-height: 46px;
     font-size: 14px;
     line-height: 17px;
   }

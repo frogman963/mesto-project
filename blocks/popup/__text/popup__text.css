@@ -10,13 +10,12 @@
   margin-left: 10px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1279px) {
   .popup__text {
-    margin: 0;
     font-size: 18px;
     line-height: 22px;
     margin-top: 25px;
     text-align: start;
-    padding-left: 20px;
+    margin-left: 20px;
   }
 }

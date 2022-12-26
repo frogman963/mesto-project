@@ -3,9 +3,10 @@
   align-items: baseline;
   gap: 25px;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1279px) {
   .profile__top-row {
     gap: 10px;
-    padding-left: 31p;
+    margin: 0 auto;
+    padding-left: 31px;
   }
 }
