@@ -1,14 +1,15 @@
 .profile__edit-button {
+  outline: none;
+  background-color: transparent;
   margin: 0;
   padding: 0;
-  border: none;
+  border: none;/* какое дублирование свойства? */
   border: 1px solid #ffffff;
   width: 24px;
   height: 24px;
   background: black url(../../../images/pen.svg);
   background-position: center;
   background-repeat: no-repeat;
-  padding: 0;
   box-sizing: border-box;
 }
 .profile__edit-button:hover {
