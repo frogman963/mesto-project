@@ -10,7 +10,7 @@
 }
 @media screen and (max-width: 1279px) {
     .third-popup__container{
-      width: 282px;
-      min-height: 322px;
+      width: 240px;
+      min-height: 299px;
     }
   }
