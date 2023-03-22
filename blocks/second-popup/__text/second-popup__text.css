@@ -1,4 +1,4 @@
-.popup__text {
+.second-popup__text {
   margin: 0;
   font-weight: 900;
   font-size: 24px;
@@ -7,11 +7,10 @@
   color: #000000;
   max-width: 330px;
   margin-top: 34px;
-  margin-left: 35px;
+  margin-left: 10px;
 }
-
 @media screen and (max-width: 1279px) {
-  .popup__text {
+  .second-popup__text {
     font-size: 18px;
     line-height: 22px;
     margin-top: 25px;
