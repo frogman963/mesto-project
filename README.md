@@ -8,6 +8,7 @@
 * CSS
 * FLEX-BOX
 * GRID
+* JavaScript
 
 
 **Github**

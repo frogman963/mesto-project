@@ -1,0 +1,19 @@
+.popup__container-picture{
+    max-width: 75vw;
+     max-height:75vh;
+     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+     border-radius: 10px;
+     font-family: inherit;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     background-color: none;
+     border-radius: 0;
+     background: none;
+ }
+ @media screen and (max-width: 1279px) {
+  .popup__container-picture{
+       width: 240px;
+       min-height: 299px;
+     }
+   }

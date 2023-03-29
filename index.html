@@ -42,39 +42,38 @@
       <p class="footer__text">© 2020 Mesto Russia</p>
     </footer>
 
-    <div class="popup">
+    <div class="popup" id="popup1">
       <div class="popup__container">
-        <h2 class="popup__text">Редактировать профиль</h2>
+        <h2 class="popup__text popup__text_properties">Редактировать профиль</h2>
         <form class="form" name="form">
           <input type="text" name="name" class="form__item" placeholder="" required />
           <input type="text" name="hobby" class="form__item" placeholder="" required />
           <button type="submit" class="form__button-safe">Сохранить</button>
         </form>
-        <button type="button" class="popup__button-close"></button>
+        <button type="button" class="popup__button-close" id="btn-close1"></button>
       </div>
     </div>
 
-    <div class="second-popup">
-      <div class="second-popup__container">
-        <h2 class="second-popup__text">Новое место</h2>
-        <form class="form" name="form">
+    <div class="popup" id="popup2">
+      <div class="popup__container">
+        <h2 class="popup__text">Новое место</h2>
+        <form class="form" name="form" id="form2">
           <input type="text" name="name" class="form__item" placeholder="Название" required />
           <input type="text" name="hobby" class="form__item" placeholder="Ссылка на картинку" required />
-          <button type="submit" class="form__button-create">Создать</button>
+          <button type="submit" class="form__button-safe">Создать</button>
         </form>
-        <button type="button" class="second-popup__button-close"></button>
+        <button type="button" class="popup__button-close " id="btnclose2"></button>
       </div>
     </div>
 
-    <div class="third-popup">
-      <div class="third-popup__container">
-        <img class="third-popup__picture" src="" alt="">
-        <h2 class="third-popup__text"></h2>
-      
-        <button type="button" class="third-popup__button-close"></button>
+    <div class="popup popup_picture-zoom" id="popup3">
+      <div class="popup__container-picture">
+        <img class="popup__picture" src="" alt="" />
+        <h2 class="popup__discription"></h2>
+
+        <button type="button" class="popup__button-close "></button>
       </div>
     </div>
-
 
     <script src="./scripts/initialCards.js"></script>
     <script src="./scripts/index.js"></script>
