@@ -12,7 +12,7 @@
 
 
 **Github**
-* [Ссылка на Github](https://github.com/frogman963/mesto-project)
+* [Ссылка на Github](https://frogman963.github.io/mesto-project/)
 
 
 **Figma**
