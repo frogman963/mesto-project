@@ -1,11 +1,11 @@
 //first popup
 const buttonEdit = document.querySelector(".profile__edit-button");
-const popupEditProfileForm = document.querySelector("#popup1");
+const popupformEditProfile = document.querySelector("#popup1");
 
-const editProfileForm = popupEditProfileForm.querySelector(".form");
-const editProfileFormFieldLogin = popupEditProfileForm.querySelector("input[name='name']");
-const editProfileFormFieldDescription = popupEditProfileForm.querySelector("input[name='hobby']");
-// const editProfileFormBtnHandler = popupEditProfileForm.querySelector(".form__button-safe");
+const formEditProfile = popupformEditProfile.querySelector(".form");
+const formEditProfileFieldLogin = popupformEditProfile.querySelector("input[name='name']");
+const formEditProfileFieldDescription = popupformEditProfile.querySelector("input[name='hobby']");
+// const formEditProfileBtnHandler = popupformEditProfile.querySelector(".form__button-safe");
 
 // Куда вставляем данные
 const profileName = document.querySelector(".profile__name");
@@ -15,9 +15,9 @@ const profileDiscription = document.querySelector(".profile__discription");
 const addButton = document.querySelector(".profile__add-button");
 const popupCreateCard = document.querySelector("#popup2");
 const buttonClosePopupCreateCard = popupCreateCard.querySelector("#btnclose2");
-const createCardForm = popupCreateCard.querySelector("#form2");
-const createCardFormFieldTitle = popupCreateCard.querySelector("input[name='name']");
-const createCardFormFieldLink = popupCreateCard.querySelector("input[name='hobby']");
+const formCreateCard = popupCreateCard.querySelector("#form2");
+const formCreateCardFieldTitle = popupCreateCard.querySelector("input[name='name']");
+const formCreateCardFieldLink = popupCreateCard.querySelector("input[name='hobby']");
 
 // third popup
 const popupScalingPicture = document.querySelector("#popup3");
@@ -41,40 +41,40 @@ function closePopup(popup) {
   popup.classList.remove("popup_opened");
 }
 
-function whriteDataEditProfileForm() {
-  editProfileFormFieldLogin.value = profileName.textContent;
-  editProfileFormFieldDescription.value = profileDiscription.textContent;
+function whriteDataformEditProfile() {
+  formEditProfileFieldLogin.value = profileName.textContent;
+  formEditProfileFieldDescription.value = profileDiscription.textContent;
 }
 
 function preparationEditPopup() {
-  whriteDataEditProfileForm();
-  openPopup(popupEditProfileForm);
+  whriteDataformEditProfile();
+  openPopup(popupformEditProfile);
 }
 
-function editProfileFormHandler(e) {
+function formEditProfileHandler(e) {
   e.preventDefault();
 
-  profileName.textContent = editProfileFormFieldLogin.value;
-  profileDiscription.textContent = editProfileFormFieldDescription.value;
+  profileName.textContent = formEditProfileFieldLogin.value;
+  profileDiscription.textContent = formEditProfileFieldDescription.value;
 
-  closePopup(popupEditProfileForm);
+  closePopup(popupformEditProfile);
 }
 
-function createCardFormHandler(e) {
+function formCreateCardHandler(e) {
   e.preventDefault();
 
-  const link = createCardFormFieldLink.value;
+  const link = formCreateCardFieldLink.value;
 
   if (!isProtocolLink(link)) return;
 
-  renderCard(createCard({ name: createCardFormFieldTitle.value, link }));
+  renderCard(createCard({ name: formCreateCardFieldTitle.value, link }));
   closePopup(popupCreateCard);
   
   
 }
 
-function nullingFormFields() {
-  createCardForm.reset(); 
+function openPopupCreateCard() {
+  formCreateCard.reset(); 
   openPopup(popupCreateCard)
 }
 
@@ -119,11 +119,11 @@ initialCards.forEach((element) => renderCard(createCard(element)));
 
 //1
 buttonEdit.addEventListener("click", preparationEditPopup);
-addButton.addEventListener("click", nullingFormFields);
-editProfileForm.addEventListener("submit", editProfileFormHandler);
+addButton.addEventListener("click", openPopupCreateCard);
+formEditProfile.addEventListener("submit", formEditProfileHandler);
 
 //2
-createCardForm.addEventListener("submit", createCardFormHandler);
+formCreateCard.addEventListener("submit", formCreateCardHandler);
 
 //3
 
