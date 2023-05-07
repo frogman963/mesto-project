@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/index.css" />
     <title>Проект место</title>
   </head>
   <body class="page">
     <header class="header">
-      <img class="header__logo" src="./images/header_logo.svg" alt="логотип" />
+      <img class="header__logo" src="../src/images/header_logo.svg" alt="логотип" />
     </header>
     <main class="content">
       <section class="profile">
         <div class="profile__info">
-          <img class="profile__avatar" src="./images/avatar.jpg" alt="аватар" />
+          <img class="profile__avatar" src="../src/images/avatar.jpg" alt="аватар"/>
           <div class="profile__name-discription">
             <div class="profile__top-row">
               <h1 class="profile__name">Жак-Ив Кусто</h1>
@@ -46,8 +45,11 @@
       <div class="popup__container">
         <h2 class="popup__text popup__text_properties">Редактировать профиль</h2>
         <form class="form" name="form">
-          <input type="text" name="name" class="form__item" placeholder="" required />
-          <input type="text" name="hobby" class="form__item" placeholder="" required />
+          
+          <input type="text" name="name"  id="name" class="popup__input-text form__item" placeholder="" minlength="2" maxlength="40" pattern="^[a-zA-Zа-яА-Я -]+$" data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"required />
+          <span class="popup__input-error name-input-error">name-input-error</span>
+          <input type="text" name="hobby" id="hobby" class="popup__input-text form__item" placeholder=""minlength="2" maxlength="200" pattern="^[a-zA-Zа-яА-Я -]+$" data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" required />
+          <span class="popup__input-error hobby-input-error">hobby-input-error</span>
           <button type="submit" class="form__button-safe">Сохранить</button>
         </form>
         <button type="button" class="popup__button-close" id="btn-close1"></button>
@@ -58,8 +60,10 @@
       <div class="popup__container">
         <h2 class="popup__text">Новое место</h2>
         <form class="form" name="form" id="form2">
-          <input type="text" name="name" class="form__item" placeholder="Название" required />
-          <input type="text" name="hobby" class="form__item" placeholder="Ссылка на картинку" required />
+          <input type="text" name="place" id="place" class="popup__input-text form__item" placeholder="Название" minlength="2" maxlength="30" pattern="^[a-zA-Zа-яА-Я -]+$" data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" required />
+          <span class="popup__input-error place-input-error">place-input-error</span>
+          <input type="url" name="link" id="link" class="popup__input-text form__item" placeholder="Ссылка на картинку" required />
+          <span class="popup__input-error link-input-error">link-input-error</span>
           <button type="submit" class="form__button-safe">Создать</button>
         </form>
         <button type="button" class="popup__button-close " id="btnclose2"></button>
@@ -67,15 +71,15 @@
     </div>
 
     <div class="popup popup_picture-zoom" id="popup3">
-      <div class="popup__container-picture">
+      <div class="popup__container-picture" style="position: relative;">
         <img class="popup__picture" src="" alt="" />
         <h2 class="popup__discription"></h2>
 
         <button type="button" class="popup__button-close "></button>
       </div>
     </div>
-
-    <script src="./scripts/initialCards.js"></script>
-    <script src="./scripts/index.js"></script>
+ <script type="module" src="./scripts/firstpopup.js"></script>
+    <script type="module" src="./scripts/initialCards.js"></script>
+    <script type="module" src="./scripts/index.js"></script> 
   </body>
 </html>
