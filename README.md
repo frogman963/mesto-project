@@ -9,10 +9,11 @@
 * FLEX-BOX
 * GRID
 * JavaScript
+* Webpack
 
 
 **Github**
-* [Ссылка на Github](https://frogman963.github.io/mesto-project/)
+* [Ссылка на Github](https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=0%3A1/)
 
 
 **Figma**

@@ -1,5 +1,15 @@
 .popup__button_type_inactive {
-    background: #E5E5E5;
-    opacity: 0.2;
-    color: #000000;
-  }
+  background: #E5E5E5;
+  opacity: 0.2;
+  color: #000000;
+  pointer-events: none; 
+}
+
+.popup__button_type_inactive:hover {
+  cursor: default;
+  pointer-events: none; 
+}
+
+.popup__button_type_inactive:not(:hover) {
+  opacity: 0.2;
+}
